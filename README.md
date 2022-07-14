@@ -44,7 +44,7 @@ More details can be found [here](https://support.dokobit.com/article/820-dokobit
 
 To retrieve the signed document using these examples, you will need:
 - Put [`postback-handler.php`](https://github.com/dokobit/portal-api-php-example/public/postback-handler.php) in a public web directory, accessible for Portal API.
-- Set `$postbackUrl` parameter in `config.php` with URL where the `postback-handler.php` will be available. For, e.g. `http://your-public-host/postback-handler.php`.
+- Set `$postbackUrl` parameter in [`config.php`](https://github.com/dokobit/portal-api-php-example/config.php) with URL where the [`postback-handler.php`](https://github.com/dokobit/portal-api-php-example/public/postback-handler.php) will be available. For, e.g. `http://your-public-host/postback-handler.php`.
 - Create signing.
 - Sign.
 - Information about a signed document will be sent to the postback URL. `postback-handler.php` will handle postback, and the signed file will be stored in the dedicated directory.
@@ -58,7 +58,7 @@ To retrieve the signed document using these examples, you will need:
 
 [`remind.php <signing_token> <signer_token>`](https://github.com/dokobit/portal-api-php-example/remind.php) - Sends reminder to participant.
 
-[`delete_signing.php`](https://github.com/dokobit/portal-api-php-example/delete_signing.php) - delets a specific signing. Once the document is signed and you have downloaded the file to save it on your end, you could choose to delete the signing from the Dokobit portal. Signing can be deleted only from your organisation. Document deletion is permanent and cannot be undone:
+[`delete_signing.php`](https://github.com/dokobit/portal-api-php-example/delete_signing.php) - delets a specific signing. Once the document is signed and you have downloaded the file to save it on your end, you could choose to delete the signing from the Dokobit portal. Document deletion is permanent and cannot be undone:
 - [`delete_signing.php <signing_token>`](https://github.com/dokobit/portal-api-php-example/delete_signing.php) - Makes a request to [POST /api/signing/{token}/delete.json](https://beta.dokobit.com/api/doc#_api_signing_delete) endpoint. The document will be removed from your account. It will remain accessible to other participants in the signing.
 - [`delete_signing.php <signing_token> all`](https://github.com/dokobit/portal-api-php-example/delete_signing.php) - Makes a request to [POST /api/signing/{token}/delete-all.json](https://beta.dokobit.com/api/doc#_api_signing_delete-all) endpoint and if executed successfully, the document will be removed from your account and from other participant accounts' you have shared it with, only if a person has not signed the document yet.
 
