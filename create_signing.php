@@ -8,7 +8,7 @@ $fileLocation = __DIR__ . '/Resources/test.pdf';
  * File details
  */
 
-//For 'pdf' type - only one file is supported.
+//Multiple files can be uploaded.
 $files = [
     [
         'name' => basename($fileLocation),
