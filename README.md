@@ -38,7 +38,7 @@ There are eight types of postback calls:
 6. `signing_completed` - Document signed by all parties;
 7. `signing_archived` - Signing archived successfully;
 8. `signing_archive_failed` - Signing archiving failed.
-More details can be found [here](https://support.dokobit.com/article/820-dokobit-webhooks).
+More details can be found [here](https://dokobitbysignicat.zendesk.com/hc/en-us/articles/20066725677724-Dokobit-Webhooks).
 
 [`postback-handler.php`](https://github.com/dokobit/portal-api-php-example/blob/main/public/postback-handler.php) - PHP code example for handling postback calls. The file should be placed in the public web directory, accessible for Portal API.
 
